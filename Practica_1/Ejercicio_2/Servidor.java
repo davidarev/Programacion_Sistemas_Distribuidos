@@ -29,7 +29,6 @@ public class Servidor {
                 System.out.println(mensaje);
                 out.writeUTF("Hola cliente, soy el server"); //Envio un mensaje al cliente
 
-                //CODIGO AÑADIDO
                 double radio = in.readDouble(); //Recibo el radio del cliente
                 double area = calcularAreaCirculo(radio); //Calculo el area del circulo
                 out.writeDouble(area); //Envio el area al cliente
